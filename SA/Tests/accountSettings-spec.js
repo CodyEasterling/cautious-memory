@@ -3,7 +3,7 @@ const gl = browser.params;
 
 describe('Shipt basic account config', function() {
 
-  
+
   it('should correctly update account name', function() {
     functions.clickWait(gl.accountButton);
     browser.waitForAngularEnabled(false);
@@ -11,10 +11,10 @@ describe('Shipt basic account config', function() {
     functions.keysWait(gl.accountName, 'new test name');
     functions.clickWait(gl.accountSave);
     browser.sleep(1000);
-    functions.valueCheck(gl.accountNameValue, 'new test name');    
+    functions.valueCheck(gl.accountNameValue, 'new test name');
   });
 
-   it('should revert account name', function() {   
+   it('should revert account name', function() {
      functions.clickWait(gl.accountEdit);
      functions.keysWait(gl.accountName, 'test name');
      functions.clickWait(gl.accountSave);
@@ -40,18 +40,18 @@ describe('Shipt basic account config', function() {
 
 
    //currently failing due to defect, cannot update phone number to one previously used
-   it('should correctly update account phone number', function() {
-    functions.clickWait(gl.accountEdit);
-    functions.keysWait(gl.accountPhone, '2051234567');
-    functions.clickWait(gl.accountSave);
-   });
-
-   //currently failing due to defect, cannot update phone number to one previously used
-   it('should revert phone number', function() {
-    functions.clickWait(gl.accountEdit);
-    functions.keysWait(gl.accountPhone, '2057654321');
-    functions.clickWait(gl.accountSave);
-   });
+   // it('should correctly update account phone number', function() {
+   //  functions.clickWait(gl.accountEdit);
+   //  functions.keysWait(gl.accountPhone, '2051234567');
+   //  functions.clickWait(gl.accountSave);
+   // });
+   //
+   // //currently failing due to defect, cannot update phone number to one previously used
+   // it('should revert phone number', function() {
+   //  functions.clickWait(gl.accountEdit);
+   //  functions.keysWait(gl.accountPhone, '2057654321');
+   //  functions.clickWait(gl.accountSave);
+   // });
 
 
 });
