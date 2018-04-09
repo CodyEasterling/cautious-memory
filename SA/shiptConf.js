@@ -24,18 +24,18 @@ exports.config = {
 
             //global variables pushed
    params: {
-              homeLogin: '//*[@id="main"]/div[1]/header/nav/ul[2]/li[1]/a',
-              loginEmail: '//*[@id="myid"]/div/ion-content/div/div/div/div[2]/form/div/label[1]/input',
-              loginPassword: '//*[@id="myid"]/div/ion-content/div/div/div/div[2]/form/div/label[2]/input',
+              homeLogin: '//*[@class="right"]/li[1]/a',
+              loginEmail: '//*[@type="email"]',
+              loginPassword: '//*[@type="password"]',
               startShopping: '//*[@id="start_shopping_login_button"]',
-              accountButton: '//*[@id="homeIonContent"]/div/div/shipt-web-subheader/div/div/button[3]',
-              accountEdit: '//*[@id="root"]/div/div[2]/section/div[2]/div[1]/div/button',
-              accountSave: '/html/body/div[4]/div/div/div/section/form/button[2]',
-              accountName: '/html/body/div[4]/div/div/div/section/form/div[1]/div/div/div/label/input',
-              accountNameValue: '//*[@id="root"]/div/div[2]/section/div[2]/div[1]/div/div/div/div[1]',
-              accountEmail: '/html/body/div[4]/div/div/div/section/form/div[2]/div/div/div/label/input',
-              accountEmailValue: '//*[@id="root"]/div/div[2]/section/div[2]/div[1]/div/div/div/div[2]',
-              accountPhone: '/html/body/div[4]/div/div/div/section/form/div[3]/div/div/div/label/input'
+              accountButton: '//*[@ng-click="vm.accountClick()"]',
+              accountEdit: '//*[contains(text(),"Edit")]',
+              accountSave: '//*/section/form/button[2]',
+              accountName: '//*[@name="name"]',
+              accountNameValue: '//*[@class="small mb4 mb0-m"]/div[1]',
+              accountEmail: '//*[@name="email"]',
+              accountEmailValue: '//*[@class="small mb4 mb0-m"]/div[2]',
+              accountPhone: '//*[@name="phone"]'
             }
 
 
