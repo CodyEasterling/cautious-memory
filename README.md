@@ -10,8 +10,8 @@ Java Developement Kit (JDK) is also required to run WDM
 Steps to install Protractor:
 
 1.After pulling down the repository, open a shell, "npm install -g protractor"  
-  (this will install protractor and webdriver-manager) 
-  "sudo npm install -g protractor" for Mac
+(this will install protractor and webdriver-manager) 
+"sudo npm install -g protractor" for Mac
   
 2. (sudo) webdriver-manager update
 
