@@ -5,7 +5,7 @@
 In order to install Protractor, Node.js must be installed as a prerequisite.
 Node.js can be downloaded at: https://nodejs.org/en/
 For this batch of tests, google chrome is also required.
-Java Developement Kit (JDK) is also required to run WDM
+Java Developement Kit (JDK) is also required to run Webdriver-Manager.
 
 Steps to install Protractor:
 
